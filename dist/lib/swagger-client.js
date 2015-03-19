@@ -1296,7 +1296,11 @@ Operation.prototype.execute = function(arg1, arg2, arg3, arg4, parent) {
 
   if(opts['sendToApiScience']) {
 
-    var apiScienceAPIKey = "nVvUks0ba_PlS-jJAjU1KQ";
+    if ($("#custom-api-science-key").val() != "") {
+      var apiScienceAPIKey = $("#custom-api-science-key").val()
+    } else {
+      var apiScienceAPIKey = "nVvUks0ba_PlS-jJAjU1KQ";
+    }
     headers = {
       'Content-Type' : 'application/json',
       'Authorization' : 'Bearer ' + apiScienceAPIKey

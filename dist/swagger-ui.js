@@ -556,7 +556,7 @@ this["Handlebars"]["templates"]["main"] = Handlebars.template({"1":function(dept
   buffer += "]\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.validatorUrl : depth0), {"name":"if","hash":{},"fn":this.program(14, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "    </h4>\n    </div>\n</div>\n";
+  return buffer + " [ <span style=\"font-variant: small-caps\">modified by api science</span> ] &nbsp;&nbsp;&nbsp; <input type=\"text\" id=\"custom-api-science-key\" placeholder=\"use your own api science key\" style=\"width: 158px; padding: 0 3px\" /> </h4>\n    </div>\n</div>\n";
 },"useData":true});
 var BasicAuthButton,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
